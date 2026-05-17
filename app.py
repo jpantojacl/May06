@@ -27,8 +27,8 @@ def cargar_modelo(url):
 # -----------------------------
 # URLs RAW de tus modelos
 # -----------------------------
-url_lr = "https://raw.githubusercontent.com/jpantojacd/May06/main/model1/modelo_regresion_logistica.pkl"
-url_rf = "https://raw.githubusercontent.com/jpantojacd/May06/main/model1/modelo_random_forest.pkl"
+url_lr = "https://raw.githubusercontent.com/jpantojacd/JulioPantojaPA2/main/model1/modelo_regresion_logistica.pkl"
+url_rf = "https://raw.githubusercontent.com/jpantojacd/JulioPantojaPA2/main/model1/modelo_random_forest.pkl"
 
 modelo_lr = cargar_modelo(url_lr)
 modelo_rf = cargar_modelo(url_rf)
