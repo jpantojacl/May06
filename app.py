@@ -25,7 +25,7 @@ def cargar_modelo(url):
         st.stop()
 
 # -----------------------------
-# URLs RAW de tus modelos
+# URLs RAW de tus modelos (CORREGIDAS)
 # -----------------------------
 url_lr = "https://raw.githubusercontent.com/jpantojacl/JulioPantojaPA2/main/model1/modelo_regresion_logistica.pkl"
 url_rf = "https://raw.githubusercontent.com/jpantojacl/JulioPantojaPA2/main/model1/modelo_random_forest.pkl"
@@ -83,14 +83,20 @@ slope = st.selectbox(
 )
 
 ca = st.selectbox("Número de vasos coloreados", [0, 1, 2, 3, 4])
+
+# -----------------------------
+# CORRECCIÓN DEL ERROR DE THAL
+# -----------------------------
+thal_options = {
+    1: "Normal",
+    2: "Defecto fijo",
+    3: "Defecto reversible"
+}
+
 thal = st.selectbox(
     "Resultado Thal",
     [1, 2, 3],
-    format_func=lambda x: [
-        "Normal",
-        "Defecto fijo",
-        "Defecto reversible"
-    ][x]
+    format_func=lambda x: thal_options[x]
 )
 
 # Crear dataframe con los datos ingresados
