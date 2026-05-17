@@ -67,7 +67,7 @@ cp = st.selectbox(
 
 trestbps = st.number_input("Presión arterial en reposo (mm Hg)", 80, 200, 120)
 chol = st.number_input("Colesterol total (mg/dl)", 100, 600, 200)
-fbs = st.radio("¿Azúcar en sangre alta en ayunas?", [0, 1], format_func=lambda x: "Sí" if x == 1 else "No")
+fbs = st.radio("¿El paciente presenta azúcar alta en la sangre en ayunas?", [0, 1], format_func=lambda x: "Sí" if x == 1 else "No")
 
 restecg = st.selectbox(
     "Resultado del electrocardiograma",
