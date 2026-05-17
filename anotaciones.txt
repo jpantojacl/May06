@@ -1,1 +1,26 @@
+Genera una página web en Streamlit desde GitHub.  
+Esta página usa dos modelos entrenados para predecir enfermedad cardíaca.  
+Los modelos están guardados en GitHub dentro de una carpeta llamada “modelos” y se llaman:
+
+- modelo_regresion_logistica.pkl  
+- modelo_random_forest.pkl  
+
+Quiero que la app cargue estos modelos desde sus enlaces RAW y permita al usuario ingresar los valores necesarios para las columnas del dataset de heart disease:
+
+- age  
+- sex  
+- cp  
+- trestbps  
+- chol  
+- fbs  
+- restecg  
+- thalach  
+- exang  
+- oldpeak  
+- slope  
+- ca  
+- thal  
+
+Después de ingresar los datos, debe haber un botón para obtener la predicción usando el modelo seleccionado por el usuario.  
+La app debe mostrar si hay riesgo o bajo riesgo de enfermedad cardíaca.
 
