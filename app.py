@@ -6,17 +6,17 @@ from io import BytesIO
 
 st.title("Predicción de Enfermedad Cardíaca ❤️")
 st.write("Ingresa la información del paciente y elige un modelo para obtener una predicción sencilla y fácil de entender.")
-st.markdown("---")
-st.subheader("Información del proyecto")
+with st.sidebar:
+    st.subheader("Información del proyecto")
 
-st.markdown("""
-**📘 Cuaderno COLAB (solo lectura):**  
-[Haz clic aquí para abrir el cuaderno](https://colab.research.google.com/drive/1HAvZaomIzwlm0aAIaOtcZ40nGMFo9DWE?usp=sharing)
+    st.markdown("""
+    **📘 Cuaderno COLAB (solo lectura):**  
+    [Haz clic aquí para abrir el cuaderno](https://colab.research.google.com/drive/1HAvZaomIzwlm0aAIaOtcZ40nGMFo9DWE?usp=sharing)
 
-**👤 Nombre:** Julio Pantoja  
-**🏫 Código ISIL:** NRC 6817
-""")
-st.markdown("---")
+    **👤 Nombre:** Julio Pantoja  
+    **🏫 Código ISIL:** NRC 6817
+    """)
+
 
 # -----------------------------
 # Función para cargar modelos desde GitHub
